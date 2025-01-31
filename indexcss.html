@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoring English Language</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #343a40;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+
+    /* Header */
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px;
+    }
+
+    #home {
+      text-align: center;
+      background-image: url("path/to/your/image.jpg"); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px 0;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #services ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    #services li {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    #services li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    #testimonials {
+      background-color: #f8f8f8;
+    }
+
+    #testimonials blockquote {
+      margin: 20px 0;
+      padding: 20px;
+      border-left: 5px solid #007bff;
+      font-style: italic;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #contact input,
+    #contact textarea {
+      width: calc(100% - 18px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    #contact input:focus,
+    #contact textarea:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    }
+
+    #contact button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #contact button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tutoring en Anglais à Prix Abordable</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <h2>Bienvenue sur notre site de tutorat</h2>
+    <p>Nous offrons des cours d'anglais personnalisés pour les adultes à un prix abordable. Que ce soit en tête-à-tête ou en classe, nous sommes là pour vous aider à améliorer vos compétences linguistiques.</p>
+  </section>
+  <section id="services">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>Cours particuliers 1 à 1</li>
+      <li>Cours en groupe</li>
+      <li>Préparation aux tests de langue</li>
+      <li>Sessions de conversation</li>
+    </ul>
+  </section>
+  <section id="testimonials">
+    <h2>Témoignages</h2>
+    <blockquote>
+      <p>"Les cours sont très efficaces et le professeur est vraiment patient!" - Marie</p>
+    </blockquote>
+    <blockquote>
+      <p>"Je me sens beaucoup plus confiant en parlant anglais grâce à ces cours." - yacine</p>
+    </blockquote>
+  </section>
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form action="process_form.php" method="post">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Tutoring English Language. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
